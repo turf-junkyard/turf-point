@@ -1,12 +1,11 @@
 module.exports = function(x, y, properties){
-  if(x === null || y === null) return new Error('Invalid coordinates')
-  var point = { 
-    "type": "Feature",
-    "geometry": {
-      "type": "Point", 
-      "coordinates": [x, y]
+  if(isNaN(x) || isNaN(y)) throw new Error('Invalid coordinates')
+  return {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [x, y]
     },
-    "properties": properties
+    properties: properties || {}
   }
-  return point
 }
