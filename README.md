@@ -12,3 +12,13 @@ var pt2 = point(-75.343, 39.984, {name: 'point 1', population: 5000})
 console.log(pt1)
 console.log(pt2)
 ```
+
+###CLI
+
+```
+npm install turf-point -g
+turf-point 2 1
+turf-point --lat 1 --lon 2
+turf-point --latitude 1 --longitude 2
+turf-point -x 2 -y 1
+```

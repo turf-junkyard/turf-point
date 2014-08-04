@@ -31,5 +31,5 @@ function docs(){
   console.log('--lat --lon');
   console.log('--latitude --longitude');
   console.log('-x -y');
-  console.log('\ndefault: \nturf-point [num1] [num2]')
+  console.log('\ndefault: \nturf-point [num1] [num2]\n\n')
 }
