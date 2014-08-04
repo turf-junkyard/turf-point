@@ -6,20 +6,20 @@ var x,y;
 
 if(argv.h || argv.help){
   docs();
-} 
+}
 else {
-  if(argv.x){
-    x = argv.x;
-    y = argv.y;
-  } else if(argv.lat){
-    x = argv.lon;
-    y = argv.lat;
-  } else if(argv.latitude){
-    x = argv.longitude;
-    y = argv.latitude;
-  } else if(argv._[0] && argv._[1]){
-    x = argv._[0];
-    y = argv._[1];
+  if(argv.x && argv.y){
+    x = parseFloat(process.argv[process.argv.indexOf('-x') + 1]);
+    y = parseFloat(process.argv[process.argv.indexOf('-y') + 1]);
+  } else if(argv.lat && argv.lon){
+    x = parseFloat(process.argv[process.argv.indexOf('--lon') + 1]);
+    y = parseFloat(process.argv[process.argv.indexOf('--lat') + 1]);
+  } else if(argv.latitude && argv.longitude){
+    x = parseFloat(process.argv[process.argv.indexOf('--longitude') + 1]);
+    y = parseFloat(process.argv[process.argv.indexOf('--latitude') + 1]);
+  } else if(process.argv[2] && process.argv[3]) {
+    x = parseFloat(process.argv[2]);
+    y = parseFloat(process.argv[3]);
   }
 
   console.log(JSON.stringify(point(x, y)));
