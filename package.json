@@ -28,5 +28,7 @@
   "dependencies": {
     "minimist": "^0.2.0"
   },
-  "bin": "bin/point.js"
+  "bin": {
+    "turf-point": "bin/point.js"
+  }
 }

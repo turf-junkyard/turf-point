@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var point =  require('../');
 var argv = require('minimist')(process.argv.slice(2));
 
