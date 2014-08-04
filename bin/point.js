@@ -22,7 +22,7 @@ else {
     y = argv._[1];
   }
 
-  console.log(point(x, y));
+  console.log(JSON.stringify(point(x, y)));
 }
 
 function docs(){
