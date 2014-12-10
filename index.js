@@ -7,5 +7,5 @@ module.exports = function(x, y, properties){
       coordinates: [x, y]
     },
     properties: properties || {}
-  }
+  };
 }
