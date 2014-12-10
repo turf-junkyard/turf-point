@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/morganherlocker/turf-point",
   "devDependencies": {
-    "0": "tape",
     "benchmark": "^1.0.0",
     "tape": "^3.0.3"
   },
