@@ -9,6 +9,13 @@ test('point', function(t){
   t.equal(pt.geometry.coordinates[1], 10);
   t.equal(pt.properties.name, 'test point');
 
+  var ptArray = point([5, 10], {name: 'test point'});
+
+  t.ok(ptArray);
+  t.equal(ptArray.geometry.coordinates[0], 5);
+  t.equal(ptArray.geometry.coordinates[1], 10);
+  t.equal(ptArray.properties.name, 'test point');
+
   t.throws(function() {
       point('hey', 'invalid');
   }, 'numbers required');

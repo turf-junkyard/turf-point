@@ -7,6 +7,9 @@ suite
   .add('turf-point',function () {
     point(5, 10, {name: 'test point'});
   })
+  .add('turf-point#array',function () {
+    point(5, 10, {name: 'test point'});
+  })
   .on('cycle', function (event) {
     console.log(String(event.target));
   })
