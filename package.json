@@ -22,9 +22,11 @@
     "url": "https://github.com/morganherlocker/turf-point/issues"
   },
   "homepage": "https://github.com/morganherlocker/turf-point",
-  "devDependencies": [
-    "tape"
-  ],
+  "devDependencies": {
+    "0": "tape",
+    "benchmark": "^1.0.0",
+    "tape": "^3.0.3"
+  },
   "dependencies": {
     "minimist": "^0.2.0"
   },
