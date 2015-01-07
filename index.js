@@ -1,12 +1,12 @@
 /**
- * Generates a new GeoJSON Point feature, given coordinates
+ * Generates a new {@link Point} feature, given coordinates
  * and, optionally, properties.
  *
  * @module turf/point
  * @param {number} longitude - position west to east in decimal degrees
  * @param {number} latitude - position south to north in decimal degrees
  * @param {Object} properties
- * @return {GeoJSONPoint} output
+ * @return {Point} output
  * @example
  * var pt1 = turf.point(-75.343, 39.984)
  */
