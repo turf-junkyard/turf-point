@@ -8,7 +8,8 @@
  * @param {Object} properties
  * @return {Point} output
  * @example
- * var pt1 = turf.point(-75.343, 39.984)
+ * var pt1 = turf.point(-75.343, 39.984);
+ * //=pt1
  */
 module.exports = function(x, y, properties){
   if(x instanceof Array) {
