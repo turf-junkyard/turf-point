@@ -4,11 +4,12 @@
   "description": "turf point module",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js"
+    "test": "tape test.js",
+    "doc": "dox -r < index.js | doxme --readme > README.md"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/morganherlocker/turf-point.git"
+    "url": "https://github.com/Turfjs/turf-point.git"
   },
   "keywords": [
     "geo",
@@ -19,12 +20,14 @@
   "author": "morganherlocker",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/morganherlocker/turf-point/issues"
+    "url": "https://github.com/Turfjs/turf-point/issues"
   },
-  "homepage": "https://github.com/morganherlocker/turf-point",
+  "homepage": "https://github.com/Turfjs/turf-point",
   "devDependencies": {
     "benchmark": "^1.0.0",
-    "tape": "^3.0.3"
+    "tape": "^3.0.3",
+    "dox": "^0.6.1",
+    "doxme": "^1.3.0"
   },
   "dependencies": {
     "minimist": "^1.1.0"

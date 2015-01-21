@@ -1,45 +1,36 @@
-turf-point
-==========
-[![Build Status](https://travis-ci.org/Turfjs/turf-point.svg?branch=master)](https://travis-ci.org/Turfjs/turf-point)
+# turf-point
 
-Creates a geojson Point Feature based on an x and y coordinate. Properties can be added optionally.
+[![build status](https://secure.travis-ci.org/Turfjs/turf-point.png)](http://travis-ci.org/Turfjs/turf-point)
 
-###Install
+turf point module
 
-```sh
-npm install turf-point
-```
 
-###Parameters
+### `turf.point(longitude, latitude, properties)`
 
-|name|description|
-|---|---|
-|x|x coordinate|
-|y|y coordinate|
+Generates a new Point feature, given coordinates
+and, optionally, properties.
 
-###Usage
+
+* `longitude` (`number`): - position west to east in decimal degrees
+* `latitude` (`number`): - position south to north in decimal degrees
+* `properties` (`Object`): - an optional object that is used as the Feature's properties
 
 ```js
-point(x, y)
+var pt1 = turf.point(-75.343, 39.984);
+//=pt1
 ```
 
-###Example
+## Installation
 
-```javascript
-var point = require('turf-point')
+Requires [nodejs](http://nodejs.org/).
 
-var pt1 = point(-75.343, 39.984)
-var pt2 = point(-75.343, 39.984, {name: 'point 1', population: 5000})
-console.log(pt1)
-console.log(pt2)
+```sh
+$ npm install turf-point
 ```
 
-###CLI
+## Tests
 
+```sh
+$ npm test
 ```
-npm install turf-point -g
-turf-point 2 1
-turf-point --lat 1 --lon 2
-turf-point --latitude 1 --longitude 2
-turf-point -x 2 -y 1
-```
+

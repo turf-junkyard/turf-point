@@ -22,7 +22,7 @@ else {
     y = parseFloat(process.argv[3]);
   }
 
-  console.log(JSON.stringify(point(x, y)));
+  console.log(JSON.stringify(point([x, y])));
 }
 
 function docs(){
