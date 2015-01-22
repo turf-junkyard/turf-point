@@ -11,12 +11,19 @@ Generates a new Point feature, given coordinates
 and, optionally, properties.
 
 
-* `longitude` (`number`): - position west to east in decimal degrees
-* `latitude` (`number`): - position south to north in decimal degrees
-* `properties` (`Object`): - an optional object that is used as the Feature's properties
+### Parameters
+
+| parameter    | type   | description                                                   |
+| ------------ | ------ | ------------------------------------------------------------- |
+| `longitude`  | number | - position west to east in decimal degrees                    |
+| `latitude`   | number | - position south to north in decimal degrees                  |
+| `properties` | Object | - an optional object that is used as the Feature's properties |
+
+
+### Example
 
 ```js
-var pt1 = turf.point(-75.343, 39.984);
+var pt1 = turf.point([-75.343, 39.984]);
 //=pt1
 ```
 
