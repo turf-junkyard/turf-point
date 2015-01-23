@@ -1,15 +1,15 @@
 /**
- * Generates a new {@link Point} feature, given coordinates
- * and, optionally, properties.
+ * Takes coordinates and properties (optional) and returns a new {@link Point} feature.
  *
  * @module turf/point
- * @param {number} longitude - position west to east in decimal degrees
- * @param {number} latitude - position south to north in decimal degrees
- * @param {Object} properties - an optional object that is used as the Feature's
+ * @param {number} longitude position west to east in decimal degrees
+ * @param {number} latitude position south to north in decimal degrees
+ * @param {Object} properties an Object that is used as the {@link Feature}'s
  * properties
- * @return {Point} output
+ * @return {Point} a Point feature
  * @example
  * var pt1 = turf.point([-75.343, 39.984]);
+ *
  * //=pt1
  */
 var isArray = Array.isArray || function(arg) {
