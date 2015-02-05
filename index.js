@@ -2,6 +2,7 @@
  * Takes coordinates and properties (optional) and returns a new {@link Point} feature.
  *
  * @module turf/point
+ * @category helper
  * @param {number} longitude position west to east in decimal degrees
  * @param {number} latitude position south to north in decimal degrees
  * @param {Object} properties an Object that is used as the {@link Feature}'s
