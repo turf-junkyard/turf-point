@@ -3,8 +3,7 @@
  *
  * @module turf/point
  * @category helper
- * @param {number} longitude position west to east in decimal degrees
- * @param {number} latitude position south to north in decimal degrees
+ * @param {number[]} coordinates longitude, latitude position (each in decimal degrees)
  * @param {Object} properties an Object that is used as the {@link Feature}'s
  * properties
  * @return {Point} a Point feature
