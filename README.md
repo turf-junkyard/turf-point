@@ -7,23 +7,27 @@ turf point module
 
 ### `turf.point(coordinates, properties)`
 
-Generates a new Point feature, given coordinates
-and, optionally, properties.
+Takes coordinates and properties (optional) and returns a new Point feature.
 
 
 ### Parameters
 
-| parameter     | type     | description                                                   |
-| ------------- | -------- | ------------------------------------------------------------- |
-| `coordinates` | number[] | - longitude, latitude position in decimal degrees             |
-| `properties`  | Object   | - an optional object that is used as the Feature's properties |
+| parameter     | type           | description                                            |
+| ------------- | -------------- | ------------------------------------------------------ |
+| `coordinates` | Array.<number> | longitude, latitude position (each in decimal degrees) |
+| `properties`  | Object         | an Object that is used as the Feature's properties     |
+
 
 ### Example
 
 ```js
 var pt1 = turf.point([-75.343, 39.984]);
+
 //=pt1
 ```
+
+
+**Returns** `Point`, a Point feature
 
 ## Installation
 
@@ -38,4 +42,5 @@ $ npm install turf-point
 ```sh
 $ npm test
 ```
+
 
