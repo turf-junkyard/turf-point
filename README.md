@@ -5,7 +5,7 @@
 turf point module
 
 
-### `turf.point(longitude, latitude, properties)`
+### `turf.point(coordinates, properties)`
 
 Generates a new Point feature, given coordinates
 and, optionally, properties.
@@ -13,12 +13,10 @@ and, optionally, properties.
 
 ### Parameters
 
-| parameter    | type   | description                                                   |
-| ------------ | ------ | ------------------------------------------------------------- |
-| `longitude`  | number | - position west to east in decimal degrees                    |
-| `latitude`   | number | - position south to north in decimal degrees                  |
-| `properties` | Object | - an optional object that is used as the Feature's properties |
-
+| parameter     | type     | description                                                   |
+| ------------- | -------- | ------------------------------------------------------------- |
+| `coordinates` | number[] | - longitude, latitude position in decimal degrees             |
+| `properties`  | Object   | - an optional object that is used as the Feature's properties |
 
 ### Example
 
