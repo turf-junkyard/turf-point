@@ -4,7 +4,7 @@
  * @module turf/point
  * @category helper
  * @param {number[]} coordinates longitude, latitude position (each in decimal degrees)
- * @param {Object} properties an Object that is used as the {@link Feature}'s
+ * @param {Object=} properties an Object that is used as the {@link Feature}'s
  * properties
  * @returns {Point} a Point feature
  * @example

@@ -12,10 +12,10 @@ Takes coordinates and properties (optional) and returns a new Point feature.
 
 ### Parameters
 
-| parameter     | type           | description                                            |
-| ------------- | -------------- | ------------------------------------------------------ |
-| `coordinates` | Array.<number> | longitude, latitude position (each in decimal degrees) |
-| `properties`  | Object         | an Object that is used as the Feature's properties     |
+| parameter     | type           | description                                                    |
+| ------------- | -------------- | -------------------------------------------------------------- |
+| `coordinates` | Array.<number> | longitude, latitude position (each in decimal degrees)         |
+| `properties`  | Object         | _optional:_ an Object that is used as the Feature's properties |
 
 
 ### Example
