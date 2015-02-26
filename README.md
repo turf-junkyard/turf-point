@@ -12,10 +12,10 @@ Takes coordinates and properties (optional) and returns a new Point feature.
 
 ### Parameters
 
-| parameter     | type           | description                                                    |
-| ------------- | -------------- | -------------------------------------------------------------- |
-| `coordinates` | Array.<number> | longitude, latitude position (each in decimal degrees)         |
-| `properties`  | Object         | _optional:_ an Object that is used as the Feature's properties |
+| parameter     | type              | description                                                    |
+| ------------- | ----------------- | -------------------------------------------------------------- |
+| `coordinates` | Array\.\<Number\> | longitude, latitude position (each in decimal degrees)         |
+| `properties`  | Object            | _optional:_ an Object that is used as the Feature's properties |
 
 
 ### Example
@@ -27,7 +27,7 @@ var pt1 = turf.point([-75.343, 39.984]);
 ```
 
 
-**Returns** `Point`, a Point feature
+**Returns** `Feature.<Point>`, a Point feature
 
 ## Installation
 
