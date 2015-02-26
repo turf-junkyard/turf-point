@@ -3,10 +3,10 @@
  *
  * @module turf/point
  * @category helper
- * @param {number[]} coordinates longitude, latitude position (each in decimal degrees)
+ * @param {Number[]} coordinates longitude, latitude position (each in decimal degrees)
  * @param {Object=} properties an Object that is used as the {@link Feature}'s
  * properties
- * @returns {Point} a Point feature
+ * @returns {Feature<Point>} a Point feature
  * @example
  * var pt1 = turf.point([-75.343, 39.984]);
  *
